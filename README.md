@@ -582,3 +582,52 @@ If else block preceeding block condition is returning False then only else block
 ## elif:
 
 elif should be preceeded by the either if block or another elif block
+
+## looping statement:
+
+looping statements are used to execute set of statements repeatedly
+
+python supports two looping statements they are
+
+1. while
+2. for
+
+## while:
+
+while loop executes set of statements repeatedly until condition becomes false
+
+syntax:
+while condition:
+stm1
+stm2
+stm3
+----
+----
+break:
+
+---
+
+break is a statement which can be used in looping statements whenever control reach to the break
+statement of the loop then without executing the loop control will comes out from the loop
+
+## continue:
+
+continue is a statement which can be used in looping statements
+whenever control reach to the continue statement of the looping statements
+then without executing the remaining part of the iteration control will go to the next
+
+## for loop:
+
+for loop executes set of statements with respect to every element of the given iterable object
+
+syntax:
+for var in iterableObject:
+---------------
+---------------
+--------------
+--------------
+
+range() is a function to generate sequance of numbers starting from 0 and stops before specified number
+
+syntax:
+range(start, stop, step)
