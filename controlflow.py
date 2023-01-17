@@ -68,3 +68,11 @@ for i in 'yogi':
 '''
 for i in range(1,10,2):
     print(i)
+print("-----------")
+for j in range(10,1,-1):
+    print(j)
+print("-----------")
+x='yogi'
+for p in x:
+    print("welcome")
+    print(p*3)

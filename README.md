@@ -631,3 +631,18 @@ range() is a function to generate sequance of numbers starting from 0 and stops 
 
 syntax:
 range(start, stop, step)
+
+range(10) => 10 is stop
+range(2,10) => 2 is start and 10 is stop
+range(1,13,2) => 1 is start, 13 is stop and 2 is step
+
+Q) Using for loop w.a.p to calculate the first N natural numbers sum
+
+## methods of string:
+
+capitalize()
+title()
+upper()
+lower()
+isdigit()
+split()
