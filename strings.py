@@ -11,3 +11,7 @@ print(a.lower())
 print(a.isdigit())
 x='1234'
 print(x.isdigit())
+
+s='learning@python@is@very@easy'
+l=s.split('@')
+print("split returns:",l)

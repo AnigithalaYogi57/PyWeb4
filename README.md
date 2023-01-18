@@ -646,3 +646,43 @@ upper()
 lower()
 isdigit()
 split()
+
+## collections:
+
+collection types reprasented classes or objects are stored in group of elements(objects)
+collection types reprasented classes objects are iterable objects
+every class provides methods to perform operations on elements.
+
+python supports fallowing collection types:
+list
+tuple
+set
+dict
+
+## LIST:
+
+list objects can be created by using square brackets or by calling list function
+
+eg: a=[] or a=list()
+-> list objects are mutable objects
+-> insertion order is preserved
+-> Heterogenious elements are allowed
+-> duplicates elements are allowed
+-> every element in the list represented with unique index
+-> list supports both positive and negative indexing
+
+x=[10,20,30,40,50,60]
+print(x)
+s=0
+for i in x:
+s+=i
+#s=s+i
+print(s)
+
+#sum try with while loop
+
+## Nested list:
+
+A list inside a list is called a nested list
+
+x = [[10,20,30],[40,50,60],[70,80,90]]
