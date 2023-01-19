@@ -15,3 +15,8 @@ print(x.isdigit())
 s='learning@python@is@very@easy'
 l=s.split('@')
 print("split returns:",l)
+
+fname = 'myfile.pdf'
+
+if fname.endswith(".pdf"):
+    print("this file is in pdf format")

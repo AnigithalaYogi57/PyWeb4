@@ -15,6 +15,8 @@ print(x[1:5])
 print(x[1:])
 print(x[-1])
 '''
+
+'''
 x=[10,20,30,40,50,60]
 print(x)
 s=0
@@ -55,3 +57,62 @@ if se in A:
     print('element is found')
 else:
     print('element is not found')
+
+'''
+'''
+x=[10,20,30,40,50,60]
+
+i=0
+s=0
+while i<len(x):
+    s=s+x[i]
+    i=i+1
+print('sum=',s)
+
+a='Yogi A'
+l=a.split()
+print(l)
+l=list(a)
+print(l)
+
+r=""
+for chr in l:
+    r=r+chr
+print(r)
+
+
+print("#".join(l))
+
+x = [[10,20,30],[40,50,60],[70,80,90]]
+a,b,c=x
+print(a)
+print(b)
+print(c)
+'''
+print("============methods of list class===================")
+x=[10,20,30,40,50,60,10]
+print(x)
+x.append(100)
+print(x)
+print(x.count(10))
+print(x.index(10))
+y=x.copy()
+print(y)
+x.insert(2,123)
+print(x)
+x.remove(123)
+x.remove(10)
+print(x)
+x.pop()
+x.pop(2)
+print(x)
+z=[80,70,90]
+x.extend(z)
+#x.append(z)
+print(x)
+# x.sort(reverse=True)
+# print(x)
+x.reverse()
+print(x)
+x.clear()
+print(x)
