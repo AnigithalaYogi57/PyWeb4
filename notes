@@ -664,6 +664,7 @@ eg:  a=[] or a=list()
 -> duplicates elements are allowed
 -> every element in the list represented with unique index
 -> list supports both positive and negative indexing
+-> the elements of the list can be mutable or Immutable
 
 x=[10,20,30,40,50,60]
 print(x)
@@ -728,3 +729,50 @@ List comprhension:
 -----------------
 The concept of generating the elements into the list object by writing some logic in the list
 is known as a list comprhension
+
+eg: x = [p for p in range(1,11)]
+print(x) => [1,2,3,4,5,6,7,8,9,10]
+
+tuple class:
+------------
+tuple objects can be created by using parenthesis or by calling tuple function or by assigning
+multiple values to a single variable
+
+eg:
+       t = () or t=tuple() or t=1,2,3
+
+*tuple objects are Immutable objects
+*insertion order is preserved
+*duplicates elements are allowed
+*Heterogenious elements are allowed
+*tuple supports both positive and negative indexing
+*the elements of the tuple can be mutable or Immutable
+
+methods of tuple:
+index, count
+
+Q) find the sum of elements of a tuple 1)using for loop, 2) using while loop
+x=(10,20,30,40,50,60)
+
+total = 210
+
+nested tuple:
+------------
+A tuple inside a tuple is called a nested tuple
+
+x = ((10,20,30),(40,50,60),(70,80,90))
+
+Differences b/w list and tuple:
+-------------------------------
+
+List                                                         Tuple
+-----                                                       -------
+list objects are mutable objects                       immutable objects
+
+Applying iteration on list takes longer time           on tuple takes less time
+
+if the frequent operation is insertion or deletion     if the frequent operation is retrival of the elements
+of the elements it is recomended                           it is recomended
+
+list can not used as a key for the dictionary           tuple can be used as a key for the dictionary if tuple
+                                                          is storing only immutable elements

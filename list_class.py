@@ -116,3 +116,31 @@ x.reverse()
 print(x)
 x.clear()
 print(x)
+
+print("=============remove the duplicates====================")
+
+x=[1,2,1,3,4,2,4,5,7,8,9,64,457,98,2,3,56,79,9,1,2,4,8,9,10]
+
+nl = []
+for elm in x:
+    if elm not in nl:
+        nl.append(elm)
+print(nl)
+
+print("================List comprehension===========")
+x = [p for p in range(1,11)]
+print(x)
+
+nl=[]
+for i in range(1,11):
+    nl.append(i)
+print(nl)
+
+nl=[]
+for i in range(10,22):
+    if i%2==0:
+        nl.append(i**2)
+print(nl)
+
+y=[p*p for p in range(10,22) if p%2==0 ]
+print(y)
