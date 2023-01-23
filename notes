@@ -776,3 +776,36 @@ of the elements it is recomended                           it is recomended
 
 list can not used as a key for the dictionary           tuple can be used as a key for the dictionary if tuple
                                                           is storing only immutable elements
+
+set class:
+----------
+set objects can be created by using curly braces {1,2} or by calling set() function
+
+* set objects are mutable objects
+* elements of the set must be immutable
+* insertion order is not preserved in set
+* duplicates elements are not allowed
+* Heterogenious elements are allowed in set
+* set is not supporting indexing
+
+tuple can be stored in a set, because tuple is a immutable object
+
+if tuple contains immutable elements then only we can use the tuple in the set
+
+methods of set:
+---------------
+add, copy, remove, pop, discard, clear
+
+discard method will not display any error if given no is not in set
+remove method will display key error if given no is not in set
+pop method will remove the first element from the set
+
+mathematical set operations
+union, intersection, difference, symmetric-difference
+
+set comprhension:
+-----------------
+The concept of generating the elements into the set object by writing some logic in the set
+is known as set comprhension
+
+x={p for p in range(10)}
