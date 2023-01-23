@@ -33,4 +33,9 @@ print(x)
 print(x[1][1])
 x[1][1]=100
 print(x[1][1])
-x[0][1]=100
+#x[0][1]=100
+
+t = (p for p in range(1,11)) #generator object
+print(t)
+for i in t:
+    print(i)
