@@ -809,3 +809,41 @@ The concept of generating the elements into the set object by writing some logic
 is known as set comprhension
 
 x={p for p in range(10)}
+
+dictionary:
+-----------
+dictionary objects can be created by using curly braces { } or by calling dict() function
+
+dictionary objects are mutable objects
+
+dictionary elements represents key-value base
+
+item: each key-value pair is known as item
+
+dictionary keys must be immutable
+
+dictionary values can be mutable or Immutable
+
+duplicates keys are not allowed but values can be duplicate
+
+insertion order is not preserved
+
+Heterogenious keys and Heterogenious values are allowed
+
+key and values are seperated with ':'
+items are seperated with ','
+
+methods of dictionary:
+---------------------
+update, get, pop, popitem, keys, values, items
+
+
+Q) calculate sum of the dictionary values
+x={'python':99,'java':90,'oracle':82,'django':97}
+
+dictionary comprhension:
+------------------------
+The concept of generating items into the dictionary by writing some logic in the dictionary
+is known as a dictionary
+
+Ex: x = {p:p*p for p in range(5)}
