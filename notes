@@ -847,3 +847,84 @@ The concept of generating items into the dictionary by writing some logic in the
 is known as a dictionary
 
 Ex: x = {p:p*p for p in range(5)}
+
+Q) take two dictionarys with same keys and different values then do the sum of values of same key.
+p={'a':24,'b':16,'c':8}
+q={'a':12,'b':18,'c':19}
+req output is :
+a=36
+b=34
+c=27
+
+Functions:
+---------
+Function is a syntax or structure is used to represent the buisiness logic to perform the operation
+
+*Function will not be executed automatically
+*Function will be executed whenever we make a function call
+*one function we call for n number of times
+
+syntax:
+              def functionName(var1, var2, var3, .....):
+              	""" doc str """
+
+              	---------------
+              	-----logic-----
+              	---------------
+
+              	return value
+
+Document string:
+---------------
+* document string is used to provide the description about the function
+
+* with in the function document string is optional but it is recomended to define
+  document string in the function
+
+def testfunc():
+	""" this is a testfunc to test the doc string """
+	print("i am in testfunc")
+
+Parameters:
+-----------
+The variables which are declared within the function declaration are known as Parameters
+
+At the time of function calling we have to pass the values to the Parameters
+
+within the function declaration Parameters are optional
+
+python supports two types of Parameters
+1) Non default Parameters
+2) default Parameters
+
+Non default Parameters:
+----------------------
+The Parameters which are declared without assigning any value are known as non default Parameters
+
+no values assigned in the function declaration
+
+At the time of calling the function we should pass values of the non default Parameters
+
+eg:
+       def f1(a,b,c):
+       	pass
+       here a,b,c are the non default Parameters
+default Parameters
+------------------
+The Parameters which are declared by assigning some value are known as default Parameters
+
+values assigned into variables in the function declaration
+
+At the time of calling the function we need not to pass the values to the default Parameters of a function
+
+eg:
+        def f1(a=1,b=2,c=3):
+        	pass
+
+        here a,b,c are the default Parameters
+
+Note:
+After defining the default Parameters we are not allowed to define non default Parameters
+
+Arguments:
+----------
