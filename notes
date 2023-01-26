@@ -928,3 +928,73 @@ After defining the default Parameters we are not allowed to define non default P
 
 Arguments:
 ----------
+The values which are passing to the Parameters of a function at the time of calling the function
+are known as Arguments
+
+python supports two types of Arguments they are:
+1. Non keyword Arguments
+2. keyword Arguments
+
+Non keyword Arguments:
+-----------------------
+The Arguments which are passed without assigning to the Parameters are known as non keyword Arguments
+
+eg:
+           def add(p,q):
+           	c=p+q
+           	print(c)
+
+           add(2,1)
+
+keyword Arguments:
+------------------
+The Arguments which are passed by assigning to Parameters name are known as keyword Arguments
+
+eg:
+           def add(p,q):
+           	c=p+q
+           	print(c)
+
+           add(q=2,p=1)
+
+
+Note:
+-----
+After defining keyword Arguments we are not allowed to define no
+
+Orbitary Parameters:
+--------------------
+The Parameters which are preceeded by star(*) are known as Orbitary Parameters
+
+At the time of calling the function we can pass zero or more values(Arguments) to the Orbitary Parameters
+
+*Parameter type internally taken as tuple
+
+eg:
+     def add(*a):
+     	print(a)
+     	print(type(a))
+     	print(sum(a))
+
+
+**Parameter type internally taken as dictionary
+
+
+Note: in Orbitary Parameters name can be any. but all are using/recomended to use
+Parameters are *args and **kwargs
+
+non keyword Arguments are stored in *args
+keyword Arguments are stored in **kwargs
+
+return statement:
+-----------------
+we can define n number of return statements in a function
+
+whenever control reach to the return statement of a function then without executing remaining
+part of the function control will come out from the function execution by returning some value
+
+the return value of the function can be stored into a variable
+we can use that variable in the remaining part of the
+
+if we are not storing the return value of a function in any value then the data
+will become as a garbbage collection
