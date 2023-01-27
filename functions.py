@@ -123,3 +123,50 @@ x=absolute(-5)
 print(x)
 y=absolute(15)
 print(y)
+
+def subtract(a,b):
+    c=a-b
+
+r=subtract(3,2)
+print(r)
+
+def myfunc():
+    print("welcome")
+
+print(myfunc)
+myfunc()
+x=myfunc
+x()
+
+print("----------------Local/Global variables----------")
+a=1000
+
+def f1():
+    b=2000
+    global a #farward declaration
+    a=5000
+    print(b)
+    print(a)
+def f2():
+    c=3000
+    print(a)
+    print(c)
+f1()
+print("----------")
+f2()
+
+def f1():
+    print("i am in f1")
+    f1()
+
+# f1()
+
+i=0
+def f2():
+    global i
+    print("i am in f2",i)
+    i=i+1
+    while i<=5:
+        f2()
+
+f2()

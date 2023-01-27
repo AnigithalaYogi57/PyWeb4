@@ -998,3 +998,58 @@ we can use that variable in the remaining part of the
 
 if we are not storing the return value of a function in any value then the data
 will become as a garbbage collection
+
+by default every function will return None
+
+why the function is executed only function call?
+------------------------------------------------
+For every function internally one object is created, store that object address into the
+function name reprasented variable and we can call that function through that variable
+
+eg:       def myfunc():
+             print("welcom")
+
+
+          print(myfunc)
+
+we can copy the function object into other variable and we can call that function through that
+variable
+
+Global variables:
+-----------------
+The variables which are declared outside of the all the functions are known as Global variables
+
+Global variable of one program can be accessed within all the functions of the same program
+
+Global variables of a program memory will be allocated only once
+
+Local variable:
+---------------
+The variables which are declared within the function are known as local variables
+
+local variables of one function can't be accessed outside of that function
+
+for all the local variables of a function memory will be allocated with respect to every time
+function
+
+* inorder to modify the Global variable values with in the function we should define
+forward declaration of Global variables
+
+global keyword to define farward declaration of Global variable
+
+eg: a=1000
+
+synatx:      global a
+             a=5000
+
+Recursive Function:
+-------------------
+
+A function which is called by itself is known as a Recursive Function
+
+infinite Recursive is not supported by python
+
+
+def f1():
+	print("i am in f1")
+	f1()
