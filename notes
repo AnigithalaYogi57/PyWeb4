@@ -1053,3 +1053,38 @@ infinite Recursive is not supported by python
 def f1():
 	print("i am in f1")
 	f1()
+
+Ananymous function or lambda function:
+======================================
+a function which doesn't contain any name is known as a Ananymous function or lambda function
+
+syntax:
+--------
+
+        lambda arguments : expression
+
+
+lambda function we can assign to the variable and we can call the lambda function through the
+variable
+
+var = lambda arguments : expression
+
+var()
+
+predefined functions: filter, map, reduce
+
+filter function takes two Arguments lambda function and iterable_object
+
+filter gives the values based on the condition whether it is true or false it displays only
+True values
+
+map function takes two Arguments lambda function and iterable_object
+
+my_list = ['1','5','4','6','8','11','13','12']
+new_list = list(map(lambda x:int(x)*int(x), my_list))
+print(new_list)
+
+map gives the values based on the expression whether it is true or false it displays both
+True and False values
+
+Q) try same thing without using filter and map, using normal function logic

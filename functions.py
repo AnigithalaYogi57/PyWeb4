@@ -170,3 +170,31 @@ def f2():
         f2()
 
 f2()
+
+print("===========lambda functions===============")
+
+#normal function to calculate square
+
+def square(x):
+    return x*x
+
+print(square(10))
+
+myfunc = lambda x : x*x
+a=myfunc(10)
+print(a)
+
+def cube(a,sqare):
+    return a*sqare(a)
+
+x=cube(10,lambda b:b*b)
+print(x)
+
+my_list = [1,5,4,6,8,11,13,12]
+
+new_list = list(filter(lambda x:x%2==0, my_list))
+print(new_list)
+
+my_list = ['1','5','4','6','8','11','13','12']
+new_list = list(map(lambda x:int(x)*int(x), my_list))
+print(new_list)
