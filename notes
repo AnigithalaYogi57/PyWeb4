@@ -1088,3 +1088,59 @@ map gives the values based on the expression whether it is true or false it disp
 True and False values
 
 Q) try same thing without using filter and map, using normal function logic
+
+
+reduce function takes two Arguments lambda function and iterable_object
+
+modules-imports:
+----------------
+Every python file itself is known as a module
+a module can contain global variables executable statements, functions and classes
+
+The Properties of one module we can use into another module by using import statement
+
+python supports two types of import statements
+
+1. normal import
+2. from import
+
+
+normal import:
+--------------
+In normal import entire python file or module object is imported
+
+whenever we import a module by using normal import statement we can access the Properties
+of that module by using module name
+
+At the time of importing a module by using normal import statement we can create the alias name
+ for the module and we can access the Properties of that module through alias name
+
+from import:
+-----------
+by using from import we can import the required Properties of a module
+
+The Properties which are imported by using from import we can access those Properties directly
+without using module name
+
+
+
+Built-in module:
+----------------
+built in is a predefined module which contains frequently used functions
+python intrepretor imports built in module for each and every python file automatically
+
+we can use the Properties of built in modules directly without importing builtin modules explicitly
+
+eg: len, rante, input
+
+modules search path:
+-------------------
+by default python intrepretor search for the imported modules in the fallowing location:
+
+1) current directory (main module directory)
+2) environment variable path
+3) Installation dependent directory
+
+if imported module is not found in the any one of the above locations then python intrepretor
+gives an error called module not found error
+
