@@ -1123,7 +1123,6 @@ The Properties which are imported by using from import we can access those Prope
 without using module name
 
 
-
 Built-in module:
 ----------------
 built in is a predefined module which contains frequently used functions
@@ -1131,7 +1130,7 @@ python intrepretor imports built in module for each and every python file automa
 
 we can use the Properties of built in modules directly without importing builtin modules explicitly
 
-eg: len, rante, input
+eg: len, range, input
 
 modules search path:
 -------------------
@@ -1139,8 +1138,67 @@ by default python intrepretor search for the imported modules in the fallowing l
 
 1) current directory (main module directory)
 2) environment variable path
-3) Installation dependent directory
+3) Installation dependent directory (Lib)
 
 if imported module is not found in the any one of the above locations then python intrepretor
 gives an error called module not found error
 
+Packages:
+---------
+Package is nothing but a folder or directory which represents collection of modules along with
+__init__.py module
+
+a Package can also contain sub Packages
+
+we can import the modules of the Package by using
+
+  import PackageName.subpackageName.moduleName as modName
+  from PackageName.subpackageName.moduleName import propertyName
+
+
+File Handling:
+-------------
+File is a named location on the disk, wich stores the data in permanent manner
+
+python language provides various functions and methods to provide the communication between python
+programes and files
+
+python programes can open the file, perform the read or write operations on the file and close the file
+
+we can open the file by calling open() function of built in modules
+
+At the time of opening the file, we have to specify the mode of the file
+
+mode of the file indicates for what purpose the file is going to be opened (r,w,a,b)
+
+                  File modes
+                  ----------
+
+'r' --> open a file for reading (default)
+
+'w' --> open a file for writing. creates a new file if it does not exist or truncates the file
+                    if it is exist
+
+'a' --> open for appending at the end of the file without trucating it, creates a new file
+                    if does not exist
+
+'t' --> open in text mode
+
+'b' --> open in binary mode
+
+
+open function open the file in the specified mode and creates file object
+
+file object provides various methods and by using those methods we can perform the read or write
+operations on the files and we can close the files
+
+write() --> to write the data into a file
+read() --> read the data from a file
+tell() --> to find the cursor position
+seek(8) --> to read the data form 8th position
+readline() --> returns first line of a file
+readlines() --> returns a list of lines
+
+Q) reverse a word, last line of last word of a file
+Q) reverse the words of first line of a file
+eg: i/p "my name is yogi" o/p "yogi is name my"
