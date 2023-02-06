@@ -1202,3 +1202,172 @@ readlines() --> returns a list of lines
 Q) reverse a word, last line of last word of a file
 Q) reverse the words of first line of a file
 eg: i/p "my name is yogi" o/p "yogi is name my"
+
+
+Exception Handling:
+-------------------
+generally we get two types of errors in programming languages they are:
+
+1.syntax errors
+2.runtime errors
+
+synatax erros:
+-------------
+The erros which occures because of invalid synataxes is known as synatax erros
+
+whenever synatax error is occured in python programe, then compiled python file will not be
+generated
+
+without getting compiled python file programe execution will not be started
+
+programer is responsible for providing the solution to the synatax erros
+
+eg: print('yogi'))
+
+Run time erros:
+--------------
+The erros which occures After starting the execution of the programe are known as runtime errors
+
+Runtime errors can occure because of
+1 invalid input
+2 invalid logic
+3 memory issues
+4 harware failures and so on
+with respect to every reason which causes to runtime error
+
+corresponding runtime error represented class is avialable
+
+runtime error represented classes technically known as a exception classes
+
+while executing the programe if any runtime error is occured corresponding exception class object
+is created
+
+creating exception class object is technically known as a raising exception
+
+while executing the programe if any exception is raised then internally python intrepreter
+verifies any code is implemented to handle the raised exception or not
+
+If code is not implemented to handle raised exception then programe will be terminated abnormally
+
+Abnormal termination:
+--------------------
+The concept of terminating the programe in the middle of its execution without executing last statement
+of the module is known as a abnormal termination
+
+Abnormal termination is undesirable situation in programming languages
+
+Exception Handling:
+-------------------
+The concept of identifying raised exception, receiving that exception and assigning that exception
+to corresponding exceptional class is known as exception Handling
+
+identifying exception
+receiving exception
+assigning exception
+
+Exception Handling can be implemented by using try and except blocks
+
+Try block:
+-----------
+A block which is preceded by the try keyword is known as a try block
+
+synatax:
+            try:
+              ----
+              ----
+              ----
+
+The statements which causes to runtime errors and other statements which depends on the
+execution of runtime errors statements are recomended to represent in try block
+
+while executing try block statement if any exception is raised then immediately try block identifies
+that exception, recieves that exception and forward that exception to except block without executing
+remaining statements to try block
+
+Except block:
+--------------
+A block which is preceded by the except keyword is known as except block
+
+except block should be preceded by try block
+
+synatax:
+-------
+      except Exception_class:
+        ---------------
+        --------------
+        ------------
+
+except block requires the exception object given by try block and assign that exception to corresponding
+exception class
+
+in except block we can also define the statements to display the user friendly error messages
+
+if exception is raised in try block statements then only control comes to the except block
+
+
+default except class:
+---------------------
+default except block is a except block which can handle any type of exception
+
+single try with multiple except blocks
+--------------------------------------
+To handle the different exceptions by using different except block we use single try
+in multiple except blocks
+
+if any exception is raised in try block then control goes to the first except block
+
+if the first except block is not handle the exception then only control will goes to the next
+except block
+
+Note:
+-----
+while defining single try with multiple except blocks default except block should be the last except
+block otherwise we get synatax error
+
+Finally block:
+--------------
+A block which is preceded by the finally keyword is known as a finally block
+
+synatax:
+           finaly:
+              ---
+              ---
+
+finaly block should be preceded by either try block or except block
+
+The set of statements which are compulsory to excecute whether exception is raised or not raised even though raised exception
+whether it is handled or not handled are recomended to represent in finally block
+
+resource releasing statements (file closing statements) or data base connection close statements
+ are recomended to represent in finally block
+
+Nested try blocks
+-----------------
+The concept of defining one try block inside another try block is known as nested
+  try block
+
+outer try block
+
+inner try block
+
+
+try:
+  statement1
+  statement2
+  try:
+    stmt1
+    stmt2
+    stmt3
+  except ZeroDivisionError:
+    inner try except
+  except:
+    inner try except
+except ValueError:
+  outer try except
+except:
+  outer try except
+
+If the exception is raised in inner try block then control goes to inner except block
+
+if inner except block is not handle that exception then control will goes to outer
+ except block
