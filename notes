@@ -1263,7 +1263,7 @@ to corresponding exceptional class is known as exception Handling
 
 identifying exception
 receiving exception
-assigning exception
+assigning exception class
 
 Exception Handling can be implemented by using try and except blocks
 
@@ -1308,6 +1308,12 @@ if exception is raised in try block statements then only control comes to the ex
 default except class:
 ---------------------
 default except block is a except block which can handle any type of exception
+syntax:
+
+        except:
+        	-----
+        	-----
+        	-----
 
 single try with multiple except blocks
 --------------------------------------
@@ -1371,3 +1377,44 @@ If the exception is raised in inner try block then control goes to inner except 
 
 if inner except block is not handle that exception then control will goes to outer
  except block
+
+Userdefined exceptions:
+-----------------------
+The exceptions which are defined by the programmers explicitly according to their buisiness requirements
+ are known as Userdefined exceptions
+
+steps to implement user defined exception:
+------------------------------------------
+
+1. defining user defined exception class
+defining any user defined class by extending any one of the predefined exception class is known
+as user defined exception class
+
+2. Raising exception:
+creating exception class object by using raise keyword is known as a raising exception
+
+3. Handling the raised exception:
+we can handle the raised exception by using try & except blocks
+
+
+class ValueTooSmallError(TypeError):
+  pass
+
+class ValueTooLargeError(Exception):
+  pass
+
+Q) count the number of vowels in a given sentance
+i/p : "Hello, have you tried our tutorial section yet?"
+
+Q) check a string is palindrome or not
+A palindrome is a string which is same read forward or backward
+
+aba == aba
+abca != acba
+
+Q) check a number is Armstrong number
+
+if we calculate for 3 digit number then the addition of the cube of each digit sum is equal to
+the corresponding number
+
+153 ==> 1^3 + 5^3 + 3^3 =153

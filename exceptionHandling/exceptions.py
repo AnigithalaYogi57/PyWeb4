@@ -25,6 +25,7 @@ finally:
 
 print("end")
 '''
+'''
 try:
     x=int(input("enter a fnumber:"))
     y=int(input("enter a snumber:"))
@@ -37,3 +38,30 @@ except KeyError:
     print("it is handled by outer try except")
 except ZeroDivisionError:
     print("outer try except zero division handled")
+'''
+print("==========user defined exceptions==============")
+
+class ValueTooSmallError(IndexError):
+    pass
+
+class ValueTooLargeError(IndexError):
+    pass
+
+number = 10
+while True:
+    try:
+        i_num= int(input("Guess a number:"))
+
+        if i_num < 10:
+            raise ValueTooSmallError
+        elif i_num>10:
+            raise ValueTooLargeError
+        else:
+            print("your guess is correct")
+            break
+    except ValueError:
+        print("enter a numeric only")
+    except ValueTooSmallError:
+        print("value is too small enter greater number")
+    except ValueTooLargeError:
+        print("value is too large enter smaller number")
