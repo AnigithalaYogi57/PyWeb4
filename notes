@@ -1418,3 +1418,117 @@ if we calculate for 3 digit number then the addition of the cube of each digit s
 the corresponding number
 
 153 ==> 1^3 + 5^3 + 3^3 =153
+
+Object oriented programme principles:
+-------------------------------------
+oops principles are nothing but certain rules or guidelines.
+
+Different oops principles are:
+1.Encapsulation
+2.Inheritance
+3.polymorphism
+4.Abstraction
+
+if we implement buisiness applications in any programming language according to oops principles
+Then we will get the security, flexibility and reusability in those applications.
+
+Object Oriented Programming languages:
+-------------------------------------
+Any programming language which provides special synataxes to implement the applications in those
+languages according to the oops principle is known as object oriented programming language
+
+ex:  c++, java, .net, python etc...
+
+procedure oriented vs Object Oriented
+
+example for procedure oriented:
+
+cname=None
+cadd=None
+cacno=None
+cbal=None
+ename=None
+eadd=None
+eid=None
+esal=None
+
+def deposit():
+  pass
+
+def withdraw():
+  pass
+
+def transfer():
+  pass
+
+def balenq():
+  pass
+
+def da():
+  pass
+
+def hra():
+  pass
+
+def tax():
+  pass
+
+def esal():
+  pass
+
+in procedure oriented mechanism, security is missing for the global variables
+
+Encapsulation:
+-------------
+The concept of binding or grouping related data members along with its releated functionalities
+is known as a Encapsulation
+
+eg: class
+
+class:
+------
+class is a syntax or structure is used to group the releated members along with its releated
+functionalities
+
+syntax:
+               class className:
+               	''' doc string '''
+               	-----------------
+               	-----------------
+               	-------data------
+               	-----------------
+               	-----------------
+
+               	-----------------
+               	-----------------
+               	-----methods-----
+               	-----------------
+               	-----------------
+
+
+within the class we can represent the data by using variables
+three types of variables:
+1 static variables(class variables)
+2 Non-static variables (instance variables)
+3 Local variables
+
+within the class we can represent the operations by using methods
+
+doc string is used to provide the description about the class doc str is optional
+
+object:
+-------
+ The concept of allocating memory space for members of a class at run time Dynamically is known
+ as a object
+
+ syntax:          pointer_var = className()
+
+If u create an object, if the object is created with original address that variable is called
+as pointer variable
+
+References are used to refer an existing variable in another name eg: self
+
+through the pointer variable we can put the data into the object
+we can get the data from the object and we call the methods on the objects
+
+we can create 'n' number of objects for a class
