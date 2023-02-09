@@ -1501,7 +1501,7 @@ syntax:
 
                	-----------------
                	-----------------
-               	-----methods-----
+               	---functionalities-----
                	-----------------
                	-----------------
 
@@ -1532,3 +1532,71 @@ through the pointer variable we can put the data into the object
 we can get the data from the object and we call the methods on the objects
 
 we can create 'n' number of objects for a class
+
+1 static variables/class variables:
+-----------------------------------
+The variables which are declared within the class and outside of all the methods are known
+as static variables
+
+class X:
+  a=1000
+  b=200
+  def m1(self,a):
+    pass
+  def m2(self):
+    pass
+
+The data which is comman for all the objects is recomended to represent through static variables
+
+class Customer:
+  bname = "SBI"
+  def m1(self):
+    pass
+
+c1 = Customer()
+c2 = Customer()
+
+static variables of a class memory will be allocated only once
+static variables of a class, we can access within all the methods of a class through the class name
+static variables of a class we can access outside of the class by using class name or through the object
+If we apply abstraction on static variables we can access inside the class not outside of the class
+
+Non-static variables(instance variables):
+-----------------------------------------
+The variables which are declared within the class by using(self.) are known as non-static variables
+
+The data which is seperate for every object is recomended to represent through non-static variables
+
+Non-static variables of a class memory will be allocated within the object
+
+non static variables of a class we can access within the same class by using self.
+
+non static variables of a class we can access outside of the class by using pointer_var
+
+class X:
+    a=1000
+    b=2000
+
+    def method1(self):
+        self.p = 5000
+        self.q = 6000
+        print(self)
+        print(X.a)
+        print(X.b)
+        print('non-static var',self.p)
+
+    def method2(self):
+        X.a = 3000
+        X.b = 4000
+        print(self.p)
+        print(self.q)
+
+x1=X()#object creation for class X
+x1.method1()
+print(x1.p)
+
+whenever we define non static variables within the methods those non static variables will be
+added to the object whenever we call that method
+
+here in this case: without calling method1 if we call method2 Attribute error
+x1.method2()  #Attribute error
