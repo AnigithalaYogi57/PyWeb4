@@ -1600,3 +1600,59 @@ added to the object whenever we call that method
 
 here in this case: without calling method1 if we call method2 Attribute error
 x1.method2()  #Attribute error
+
+constructors:
+-------------
+constructor is a special method
+
+constructor name should be __init__(self)
+
+constructor is used to define & initialize non static variables
+
+class X:
+
+  def __init__(self):
+    self.a = 100
+    self.b = 200
+  def m1(self):
+    pass
+
+
+y1=X()
+y1.m1()
+y1.m1()
+y2=X()
+
+
+differences b/w methods and constructor
+--------------------------------------
+
+         method                                               constructor
+         =======                                             ==============
+
+method name can be any name                          constructor name should be __init__
+
+method will be executed whenever we                  constructor will be executed automatically
+call a method                                        whenever we create an object
+
+with respect to one object one method                with respect to one object one constructor can be
+can be called for n number of times                  executed only once
+
+methods are used to represent the business           constructor is used to define &
+logic to perform the operations                      initialize non static variables
+
+
+Q) i will take one class and creates number of objects, find the count of objects.
+
+c1=Customer()
+c2=Customer()
+c3=Customer()
+
+print('count of objects:',3)
+
+Local variables:
+---------------
+The variables which are declared within the method body are known as local variables
+
+The data which is required to use within a perticluar method is recomended to represent
+through local variables
