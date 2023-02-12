@@ -1656,3 +1656,37 @@ The variables which are declared within the method body are known as local varia
 
 The data which is required to use within a perticluar method is recomended to represent
 through local variables
+
+Adding the static variables to the class from the outside of the class
+----------------------------------------------------------------------
+by using the class name we can add the static variables to the class
+
+class X:
+  a=1000
+  def display(self):
+    print(X.a)
+x1=X()
+X.b=2000
+print(X.a)
+print(X.b)
+
+removing the static variables of the class from the outside of the class
+----------------------------------------------------------------------
+
+using fallowing syntax
+                        del classname.staticvarible
+
+
+Adding the Non-static variables to the class from the outside of the class
+---------------------------------------------------------------------------
+
+by using the referance variable
+
+the non static variables which are added to the one object will not be available in another object
+
+
+removing the Non-static variables of the class from the outside of the class
+----------------------------------------------------------------------------
+
+using fallowing syntax
+                        del pointer_var.non-staticvarible
