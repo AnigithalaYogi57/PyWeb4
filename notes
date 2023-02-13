@@ -1690,3 +1690,90 @@ removing the Non-static variables of the class from the outside of the class
 
 using fallowing syntax
                         del pointer_var.non-staticvarible
+
+garbagge collection:
+-------------------
+The concept of removing unused or unreference objects from the memory location is known as a
+garbagge collections
+
+Garbage collector is a predefined programe which removes the unused or unreferenced objects
+from the memory location
+
+any object referance count becomes zero then we call that object as unused or unreferenced object
+
+python intrepreter is responsible to call the garbagge collector and garbagge collector will
+remove the object from memory location
+
+class X:
+  pass
+
+x1 =X()
+x1=X()
+
+Destructor:
+-----------
+destructor is one special method and the Destructor name should be "__del__"
+
+destructor will be executed automatically whenever object is deleting from memory location
+del:
+----
+del removes the variables but not the object, it decreases the referance count
+
+del is a keyword which removes the given variable or variable from the memory location
+
+whenever del removes a variable the referance count of the object will be decreased by one
+
+class X:
+  def __init__(self):
+    print('i am in constructor')
+  def __del__(self):
+    print('i am in destructor')
+
+x1=X()
+x2=x1
+x3=x2
+
+del x1
+del x2
+del x3
+
+Using properties of one class into another class:
+------------------------------------------------
+we can use the properties of one class into another class in two ways
+
+1. Has a relationship
+2. Is a relationship (Inheritance)
+
+Has a relationship:
+-------------------
+The concept of using the properties of one class into another class by using class name or
+using pointer_var name is known as a Has a relationship
+
+class X:
+    a=100
+    def __init__(self):
+        self.b=200
+
+    def m1(self):
+        print("in m1 of X")
+
+class Y:
+    c=3000
+    def __init__(self):
+        self.d=4000
+    def m2(self):
+        print("in m2 of Y")
+    def m3(self):
+        print(X.a)
+        x1=X()#object creation for class-X
+        x1.m1()
+        print(Y.c)
+        print(self.d)
+        self.m2()
+        print("in m3 of Y")
+
+y1=Y()
+y1.m3()
+
+Is a relationship(Inheritance):
+-------------------------------
