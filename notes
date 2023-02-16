@@ -1777,3 +1777,128 @@ y1.m3()
 
 Is a relationship(Inheritance):
 -------------------------------
+The concept of using the properties of one class into another class directly is known as a Inheritance
+or Is a relationship
+
+A class which is extended by another class is known as a super class or base class
+
+A class which is extending another class is known as a sub class or derived class
+
+super class properties directly we can access into the sub class like as a sub class members
+
+Both super class properties and subclass properties we can access through the subclass name or through
+subclass pointer_var name
+
+object class:
+-------------
+object  class is a predefined class which is defined in built in modules
+
+object class is a super class for every class in python
+
+Types of Inheritance:
+---------------------
+single Inheritance:
+-------------------
+The concept of inheriting the properties from only one class into another class is known as a single
+Inheritance
+
+object
+  |
+  |
+  X
+
+class X(object):
+    a=100
+    def __init__(self):
+        self.b=200
+
+    def m1(self):
+        print("in m1 of X")
+
+Multilevel Inheritance:
+-----------------------
+The concept of inheriting the properties from multiple classes into single class with the concept
+of one After another is known as a Multilevel Inheritance
+
+                       object
+                         |
+                         |
+                         X
+                         |
+                         |
+                         Y
+
+class X(object):
+  pass
+
+class Y(X):
+  pass
+
+class Z(Y):
+  pass
+
+z1=Z()
+
+Hierarchial Inheritance:
+-----------------------
+The concept of inheriting the properties from one class into multiple classes seprately is known
+as Hierarchial Inheritance
+
+                    object
+                      |
+                      |
+                      |
+                  -----------
+                  |         |
+                  |         |
+                  Y         Z
+
+class Y(object):
+  pass
+
+class Z(object):
+  pass
+
+multiple Inheritance:
+---------------------
+The concept of inheriting the properties from multiple classes into single class at a time is known
+as multiple Inheritance
+
+                          object               object
+                            |                     |
+                            |                     |
+                            X                     Y
+                            |_____________________|
+                                       |
+                                       |
+                                       Z
+class X(object):
+  pass
+
+class Y(object):
+  pass
+
+class Z(X,Y):
+  pass
+
+cyclic Inheritance:
+-------------------
+The concept of inheriting the properties from subclass to superclass is known as a cyclic Inheritance
+
+             X
+             |
+             |
+             Y
+             |
+             |
+             Z
+             |
+             |
+             X
+cyclic Inheritance is not supported by python
+
+
+Hybrid Inheritance:
+-------------------
+The combination of single, multilevel, hierarchial and multiple inheritances is known as a Hybrid
+inheritance.
