@@ -15,6 +15,7 @@ print(d)
 print(d.a)
 d.firstmethod()
 d.secondmethod()
+Demo.secondmethod(d) #using class name calling the method.
 print("end")
 
 l=[1,2,3]

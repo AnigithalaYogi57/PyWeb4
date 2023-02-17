@@ -1902,3 +1902,108 @@ Hybrid Inheritance:
 -------------------
 The combination of single, multilevel, hierarchial and multiple inheritances is known as a Hybrid
 inheritance.
+
+polymorphism:
+-------------
+The concept of defining multiple functionalities or multiple logics to perform the same operations
+is known as polymorphism
+
+poly means 'many' morphism means 'forms/behaviours' forms means functionalities or logics
+
+polymorphism can be implemented through method overloading or method overriding synataxes
+
+overloading:
+-----------
+The concept of defining multiple methods with the same name or same number of Parameters, different
+number of Parameters within a class is known as a method overloading
+
+class X:
+  def m1(self,p):
+    print("first method")
+  def m1(self,a,b):
+    print("second method")
+  def m1(self,e,f,g):
+    print("Third method")
+
+x1=X()
+x1.m1(1,2)
+
+whenever we define multiple methods with same name within a class then by default python intrepreter
+recognizes last defined method only
+
+constructor overloading:
+-----------------------
+class X:
+  def __init__(self,a):
+    self.a=a
+  def __init__(self,b,c):
+    self.b=b
+    self.c=c
+
+x1=X(1,2)
+print(x1.b)
+print(x1.c)
+print(x1.a)
+
+Method overriding:
+-----------------
+The concept of defining multiple methods with the same name, with same number of Parameters
+or different number of Parameters one is in super class another one is in subclass is known as
+method overriding
+
+class X:
+  def m1(self):
+    print("with no param m1 of X")
+
+class Y(X):
+
+  def m1(self):
+    print("with no param m1 of Y")
+
+y1=Y()
+y1.m1()
+
+whenever we override super class method in subclass then by default subclass method will be executed
+
+we can also access the super class method after overriding that method in subclass by using
+super().methodName() statement
+
+constructor method overriding:
+------------------------------
+
+class X:
+	def __init__(self):
+		self.a=1000
+		self.b=2000
+
+class Y(X):
+	def __init__(self):
+		super().__init__()
+		self.c=3000
+		self.d=4000
+
+	def display(self):
+		print(self.a)
+		print(self.b)
+		print(self.c)
+		print(self.d)
+
+
+y1=Y()
+y1.display()
+
+Abstraction:
+------------
+The concept of hiding the properties of a class is known as abstraction
+
+we can hide the properties of a class by using '__'
+
+Hidden properties of a class cannot be accessed directly from outside of the class
+
+Hidden properties of a class cannot be accessed directly within its subclass also
+
+Hidden properties of a class can be access from outside of the class using some special synatax
+
+        syntax: classname._classname__var
+
+we can also call the methods using class name, we should pass the object to the self Parameter
