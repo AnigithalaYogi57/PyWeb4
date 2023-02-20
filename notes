@@ -2007,3 +2007,37 @@ Hidden properties of a class can be access from outside of the class using some 
         syntax: classname._classname__var
 
 we can also call the methods using class name, we should pass the object to the self Parameter
+
+Python Database:
+----------------
+ORDBMS (object relational database management system) are the softwares which stores the data in permanent
+manner
+
+it allows to perform the read and write operations on the data of the ORDBMS
+
+It provides the security for the data
+
+Different ORDBMS are:
+oracle, mysql, db2, sqlite3, sqlserver etc..
+
+To provide the communication between python programme to the corresponding ORDBMS
+we use database related external modules
+
+database related external modules we can install by using pip application
+
+in cmd run "pip install mysql-connector-python"
+
+download and install mysql workbench
+
+https://www.w3schools.com/python/python_mysql_getstarted.asp
+
+SHOW DATABASES;
+CREATE DATABASE dbname;
+USE DATABASEName;
+CREATE TABLE tableName(col1(varchar(20)), col2(int));
+INSERT INTO TableName(col1, col2 ) values ('row1','row1');
+SELECT * FROM TableName;
+UPDATE TableName set col1='updatevalue' WHERE id=1;
+DROP TABLE TableName;
+DROP DATABASE dbName;
+TRUNCATE Table TableName;
