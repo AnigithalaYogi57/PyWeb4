@@ -2029,8 +2029,6 @@ in cmd run "pip install mysql-connector-python"
 
 download and install mysql workbench
 
-https://www.w3schools.com/python/python_mysql_getstarted.asp
-
 SHOW DATABASES;
 CREATE DATABASE dbname;
 USE DATABASEName;
@@ -2041,3 +2039,5 @@ UPDATE TableName set col1='updatevalue' WHERE id=1;
 DROP TABLE TableName;
 DROP DATABASE dbName;
 TRUNCATE Table TableName;
+
+https://www.w3schools.com/python/python_mysql_getstarted.asp
