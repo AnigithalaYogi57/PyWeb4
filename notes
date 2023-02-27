@@ -2041,3 +2041,50 @@ DROP DATABASE dbName;
 TRUNCATE Table TableName;
 
 https://www.w3schools.com/python/python_mysql_getstarted.asp
+
+multithreading:
+--------------
+Thread is a functionality or logic which can execute simultenously along with the other part of the
+programe
+
+Thread is a light weight process
+
+Any programme which is under execution is known as a process
+
+we can define the threads in python by overriding run method of thread class
+
+Thread class is a predefined class which is defined in threading module
+
+
+if we call the run method directly the logic of the run method will be executed as a normal
+method logic
+
+In order to execute the logic of the run method as we use start method of the thread
+
+
+import threading # from threading import Thread
+
+threading.Thread
+
+class Thread:
+   def run(self):
+      pass
+
+class X(Thread):
+   def run(self):
+      pass
+
+x1=X()
+x1.start()
+
+
+whenever we run python programme then by default python interpreter creates main thread
+
+After creating main thread programme execution starts from main thread
+
+in the middle of the execution of the main thread if any other threads are created those threads and
+main thread execution will takes place one with the other
+
+join is a predefined method which is defined in thread class
+
+join() method suspend the execution of the current thread until specified thread execution is over
