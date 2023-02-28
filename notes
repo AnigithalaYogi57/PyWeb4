@@ -2088,3 +2088,69 @@ main thread execution will takes place one with the other
 join is a predefined method which is defined in thread class
 
 join() method suspend the execution of the current thread until specified thread execution is over
+
+Iterators:
+----------
+Iterator is a protocal, if any class is implementing iterator protocal that class object we can
+convert in the form of iterable object
+
+If any class contains two special methods called __iter__ and __next__ then we call that class
+is implementing or satisfying iterator protocal
+
+class str:
+    def __iter__(self):
+        pass
+
+    def __next__(self):
+        pass
+s=str()
+
+
+class list:
+    def __iter__(self):
+        pass
+
+    def __next__(self):
+        pass
+
+
+we can convert the object in the form of iterable object by calling iter function on the object
+whenever we call the iter function on any object then internally __iter__ method of that object
+represent class will be executed
+
+it1=iter(s) #converting object into iterable object
+
+
+iterable objects can be store zero or more elements
+
+to get the one by one element from the iterable objects we call the next function on iterable objects
+
+whenever we call the next function, __next__ method will be
+
+next(it1)
+next(it1)
+next(it1) ...
+
+according to the iterator protocal rules __iter__ method should return the object and
+__next__ method should contain the stop iteration exception raising statement
+
+s='python'
+it1=iter(s)
+next(it1)
+next(it1)
+next(it1)
+next(it1)
+next(it1)
+next(it1)
+next(it1) #StopIterationError
+
+
+for loop is implemented in python language as fallows
+
+for element in clsobj:
+    iter_obj = iter(clsobj)
+    while True:
+        try:
+            element = next(iter_obj)
+        except StopIteration:
+            break
