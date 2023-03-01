@@ -2154,3 +2154,74 @@ for element in clsobj:
             element = next(iter_obj)
         except StopIteration:
             break
+
+Generators:
+-----------
+Generator is a function it contains one or more yield statements
+
+whenever we call the generater function without executing the function logic it returns
+iterable object i.e generater function internally implemented iterator protocal
+
+whenever we call the next function then the generater function execution will be started and
+control comes out from the generater function execution when it control reached to yield statement
+
+once again if we call the next function on the iterable object then generater function execution
+starts from previous yield statement to the next yield statement
+
+if no more yield statements in the generater function it raises StopIteration exception
+
+whenever control reached to the yield statement of a function without terminating the function execution
+pause the function execution & control comes out from the function execution
+
+Closures:
+--------
+Nested Functions:
+a function which is defined inside another function is known as a nested function or inner function
+
+A function which contains another function is known as a enclosing function or outer function
+
+def outer():
+
+   def inner():
+      pass
+   inner()
+
+
+
+
+whenever we call the outer function by default outer function only executed
+whenever we call the inner function by default inner function only executed
+we call inner function can not be called directly outside of outer function
+
+inner function can be called directly within in the outer function
+
+whenever we call outer function only inner function will call
+
+we can call inner function from outside of the outer function by returning inner function object through
+the outer function
+
+After returning the inner function object by the outer function we can delete the outer function
+
+eventhough we delete the outer function still we can access the inner function
+
+closure meaning:
+------------
+Any function which is satisfying fallowing rules and regulations, then we call that function as a cloure
+
+1 function should contain nested function
+
+2 the nested function must refer to a value defined in the enclosing function
+
+3 the enclosing(outer)function must return nested(inner)function object
+
+def outer(a):
+   print("in outer")
+   def inner():
+      print(a)
+      print('in inner')
+
+   return inner
+
+instead of defining single class with single method recommended to define closure
+
+closures can avoid the use of global values and provides some form of data hiding
