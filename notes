@@ -2205,7 +2205,7 @@ After returning the inner function object by the outer function we can delete th
 eventhough we delete the outer function still we can access the inner function
 
 closure meaning:
-------------
+----------------
 Any function which is satisfying fallowing rules and regulations, then we call that function as a cloure
 
 1 function should contain nested function
@@ -2225,3 +2225,43 @@ def outer(a):
 instead of defining single class with single method recommended to define closure
 
 closures can avoid the use of global values and provides some form of data hiding
+
+Decorators:
+===========
+Decorators are used to add the some functionality to the existing code
+
+decorator function and decorated function
+
+the function which contains the logic(extra functionality) is known as a decorator function
+
+we call the existing function as a decorated function
+
+decorated function object will be passed as a parameter to decorator function whenever we call the
+decoration function
+
+decorated function executes and returns the object
+
+the return object of the decorator function is going to executed automatically
+
+def make_pretty(fun):
+    def inner():
+        print("i got decorated")
+        fun() # = ordinary()
+    return inner
+
+@make_pretty
+def ordinary():
+    print("i am ordinary")
+
+ordinary()
+
+Regular Expressions:
+-------------------
+Regular Expressions are nothing but special characters and by using regular expression special characters
+we can define the regular expression patterns
+
+string = "anigithalayogi@gmail.com BBRPA5019B 9010164749 ayogi8919@gmail.com 7981106032 XARAP5019A 9705915872"
+
+By using regular expression patterns we can extract the required information from the given data.
+
+data form validations, url patterns for the web pages
