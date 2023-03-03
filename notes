@@ -2265,3 +2265,42 @@ string = "anigithalayogi@gmail.com BBRPA5019B 9010164749 ayogi8919@gmail.com 798
 By using regular expression patterns we can extract the required information from the given data.
 
 data form validations, url patterns for the web pages
+
+
+Regular Expressions
+a   Exactly one 'a'
+a*  Any number of 'a's including zero number
+a+  Atleast one 'a'
+a?  Atmost one 'a' ie either zero number or one number
+a{m}    Exactly m number of 'a's
+a{m,n}  Minimum m number of a's and Maximum n number of a's
+
+[abc]===>Either a or b or c
+[^abc] ===>Except a and b and c
+[a-z]==>Any Lower case alphabet symbol
+[A-Z]===>Any upper case alphabet symbol
+[a-zA-Z]==>Any alphabet symbol
+[0-9] Any digit from 0 to 9
+[a-zA-Z0-9]==>Any alphanumeric character
+[^a-zA-Z0-9]==>Except alphanumeric characters(Special Characters)
+
+\s  Space character
+\S  Any character except space character
+\d  Any digit from 0 to 9
+\D  Any character except digit = [^0-9]
+\w  Any word character [a-zA-Z0-9]
+\W  Any character except word character (Special Characters)
+\.   Any character including special characters
+
+^x  It will check whether target string starts with x or not
+x$  It will check whether target string ends with x or not
+
+Important functions of re module:
+
+1.  match()
+2.  fullmatch()
+3.  search() 4.findall()
+5. sub() 6.subn()
+7. split()
+8.  compile()
+9. finditer()
