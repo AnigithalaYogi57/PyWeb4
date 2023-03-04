@@ -68,3 +68,21 @@ r = re.findall(ptn, d)
 print(r)
 match=re.findall("[a-zA-Z0-9_.]+@\w+[.]com",d)
 print(match)
+
+while True:
+    pwd = input("Please enter a password: ")
+    if bool(re.search("\s",pwd)):
+        print("password should not contains space char")
+    elif not (re.findall("[A-Z]", pwd)):
+        print("At least one Uppercase letter")
+    elif not (re.findall("[a-z]", pwd)):
+        print("At least one Lower letter")
+    elif not (re.findall("[0-9]", pwd)):
+        print("At least one digit")
+    elif not len(pwd)>=8:
+        print("password too short minumum should be 8 chars")
+    elif not (re.findall("\W", pwd)):
+        print("At least one special char")
+    else:
+        print("valid password")
+        break

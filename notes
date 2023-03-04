@@ -2304,3 +2304,14 @@ Important functions of re module:
 7. split()
 8.  compile()
 9. finditer()
+
+command line arguments:
+----------------------
+The concept of passing the values from the command promt at the time of running the python file
+is known as a command line arguments
+
+python file name is also taken as a one of the command line argument
+All the command line arguments are stored into the list object in the form of strings and the list object
+is stored in the argv variable of sys module
+
+sys is one predefined module
