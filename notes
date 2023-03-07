@@ -2315,3 +2315,28 @@ All the command line arguments are stored into the list object in the form of st
 is stored in the argv variable of sys module
 
 sys is one predefined module
+
+main module (if __name__ == "__main__":)
+------------------------------------------
+which python file directly we are running that  python file we call as a main module
+
+The name of the current module is stored in one predefined attribute called __name__
+
+json:
+----
+javascript object notation
+
+The data is represented in the form of list or dictionary or combination of list and dict
+
+python has a built-in package called json, which can be used to work with JSON data
+
+json.loads() ==> json to python(dict)
+json.dumps() ==>python(dict) to json
+
+[
+  {"first_name":"Yogi", "last_name":"A"},
+  {"first_name":"Naveen", "last_name":"B"},
+  {"first_name":"Naresh", "last_name":"C"},
+]
+
+https://www.w3schools.com/python/python_json.asp
