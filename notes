@@ -2340,3 +2340,50 @@ json.dumps() ==>python(dict) to json
 ]
 
 https://www.w3schools.com/python/python_json.asp
+
+os module:
+----------
+os module is a predefined module and which provides various functions and methods to perform the
+operating system related activities such as creating the directory/files removing the directory/files,
+executing the operating system related activities
+
+os.getcwd()
+os.chdir(os.pardir)
+os.chdir("folderName")
+os.makedirs('folder/subfolder')
+os.remove('folder/subfolder/file')
+os.removedirs('folder/subfolder')
+
+https://python101.pythonlibrary.org/chapter16_os.html
+
+webscraping (requests):
+-----------------------
+
+The concept of getting the data from the website is known as web scraping
+
+we can extract the data by sending the request to the webservice of the website
+
+website can provides the any one of the fallowing types of web webservices
+
+1)soap  2)Restful (RestAPI's)
+
+soap based web services will give the data in the form of xml format
+
+Restful web services can give the data in the form of any mime format
+
+A media type or MIME type(multipurpose internet mail extensions)
+
+eg: Textual files --> text/plain
+    .csv files        text/csv
+    .html files       text/html
+    .json files       application/json
+    .pdf files        application/pdf
+
+    etc....
+
+we can send the request to the web services of a website by using predefined functions of requests
+module
+
+requests module is an external we can install that module by using pip
+
+pip install requests
