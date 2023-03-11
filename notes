@@ -2387,3 +2387,25 @@ module
 requests module is an external we can install that module by using pip
 
 pip install requests
+
+Graphical user interface(GUI):
+------------------------------
+Tkinter is the standard GUI library for python. Python when combined with Tkinter provides a fast
+and easy way to create GUI applications. Tkinter provides a powerful object-oriented interface to
+the Tk GUI toolkit.
+
+import tkinter
+
+DataVisualization:
+------------------
+Data can be visualized through various statistical graphs
+inorder to visualize the data we use predefined function pyplot of matplotlib
+
+matplotlib is an external package we can install matplotlib by using pip
+
+pip install matplotlib
+
+DataAnalytics:
+-------------
+
+Pip install pandas
