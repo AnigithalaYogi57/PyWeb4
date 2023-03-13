@@ -1,0 +1,56 @@
+Front end    and    backend
+---------         -----------
+HTML                Python
+CSS                 Django
+BOOTSTRAP           Database
+JAVASCRIPT
+DOM
+
+Frontend: How the things should be display to the enduser
+Backend: what things should be display to the
+
+History of Django:
+------------------
+Django is started is an internal project in lawrence journal world organization in 2001
+
+siman and andrian are web developers and keep on creating and maintain the websites
+
+all the comman componantes from all the websites and developed a new framework.
+
+They named Django to the frame work
+
+The word django is taken from the famous guitarist Django Reinhardt
+
+They developed DSF(django software foundation) and released django first version under DSF
+as a free source to public in 2005
+
+Features of Django:
+------------------
+Fast Developent
+Fully loaded: authentication, security, session management, admin
+security: csrf
+scalability: heviest traffic demand
+versatile: every where we can use (small to big applications)
+
+Advantages:
+-----------
+lot of default code.
+we can add less code as per our requirement
+less development time
+less develeopment cost
+less maintainance time
+It gives more productivity and more results
+
+Django Installation:
+--------------------
+python should be installed in our machine
+pip is available in python\scripts\
+cmd: > pip install django
+
+to install perticular version Eg. cmd: > pip install django == 3.2
+
+list of packages cmd: > pip list
+
+python version: cmd: > python --version
+
+django version: cmd: > django-admin --version
