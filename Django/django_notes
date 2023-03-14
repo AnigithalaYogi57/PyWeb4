@@ -54,3 +54,40 @@ list of packages cmd: > pip list
 python version: cmd: > python --version
 
 django version: cmd: > django-admin --version
+
+Django project:
+---------------
+A project is a collection of applications along with theiir settings or configurations
+
+project must have atleast one application or almost n number of applications
+
+when we install django package then automatically django-admin file wiil be installed. This file
+is used to create a django project
+
+cmd: > django-admin startproject projectName
+
+change the directory : cd projectName
+
+Run the server by running manage.py with the argument runserver.
+
+cmd: > python manage.py runserver
+
+Django application(app):
+------------------------
+An application is a specific task of the project
+we can ccreate one or more applictions in a single project
+we use manage.py file to create an application
+we use startapp command to create an application
+
+cmd: > python manage.py startapp appName
+
+cmd: > python manage.py runserver
+
+Django Architecture:
+--------------------
+generally all frameworks are follows MVC Architecture but django fallows MVT Architecture
+
+M --> models.py    ---> Database coding
+V --> Views.py     ---> Buisinus coding
+T --> Template     ---> presentation coding(HTML)
+c means controller
